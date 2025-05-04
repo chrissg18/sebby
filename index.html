@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Animated Rainbow Text</title>
+  <!-- Link to the external CSS file -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 id="rainbow-text">Sebastian.is.gay!</h1>
+
+  <script>
+    const text = document.getElementById('rainbow-text');
+    const letters = text.textContent.split('');
+    text.innerHTML = letters.map((char, i) => {
+      return `<span class="rainbow-letter" style="animation-delay: ${i * 0.1}s">${char}</span>`;
+    }).join('');
+  </script>
+</body>
+</html>
+
