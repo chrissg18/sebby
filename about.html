@@ -2,11 +2,41 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>About Me</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>I Love Kissing Boys!</title>
+  <style>
+    html, body {
+      margin: 0;
+      height: 100%;
+      background: linear-gradient(270deg, red, orange, yellow, green, blue, indigo, violet);
+      background-size: 1400% 1400%;
+      animation: moveBg 20s ease infinite;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @keyframes moveBg {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    h1 {
+      font-size: 4em;
+      color: white;
+      font-family: Arial, sans-serif;
+      animation: flash 1s infinite alternate;
+      text-align: center;
+    }
+
+    @keyframes flash {
+      0% { opacity: 1; }
+      100% { opacity: 0.3; }
+    }
+  </style>
 </head>
 <body>
-  <h1>About Me</h1>
-  <p>This is a new page on my site!</p>
+  <h1>I love kissing boys!</h1>
 </body>
 </html>
+
