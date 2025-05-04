@@ -1,0 +1,38 @@
+body {
+  background-image: url('sebby.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #f5f5f5;
+  font-family: 'Courier New', monospace;
+  text-align: center;
+  padding-top: 50px;
+}
+
+h1 {
+  font-size: 6em;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+}
+
+.rainbow-letter {
+  display: inline-block;
+  animation: rainbow 3s linear infinite;
+}
+
+@keyframes rainbow {
+  0%   { color: red; }
+  14%  { color: orange; }
+  28%  { color: yellow; }
+  42%  { color: green; }
+  57%  { color: blue; }
+  71%  { color: indigo; }
+  85%  { color: violet; }
+  100% { color: red; }
+}
+
+a {
+  color: #ffcc00;
+  text-decoration: none;
+}
+
